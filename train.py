@@ -33,7 +33,7 @@ N_CLASSES = 1
 
 valid_image_ids, train_image_ids = split_ids(config.IMAGE_IDS, 50)
 train_loader, valid_loader = data_loader(
-    folder='../stablediffusion/outputs/img_2_img_heatmap',
+    folder=config.IMAGE_FOLDER,
     train_image_ids=train_image_ids,
     valid_image_ids=valid_image_ids,
     train_batch_size=config.TRAIN_BATCH_PER_GPU * torch.cuda.device_count(),

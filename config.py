@@ -10,4 +10,5 @@ LEARNING_RATE = 5e-4
 BASE_MODEL_PATH = "./logs/2023-04-06-11:22:58_base"
 # BASE_MODEL_PATH = None
 
+IMAGE_FOLDER = '../stablediffusion/outputs/img_2_img_heatmap'
 IMAGE_IDS = list(range(460, 1116))
